@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Redstore | E-commerce Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- <img src="{% static 'images/logo.png' %}" width="125px"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="{% static 'images/logo.png' %}" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="{% static 'images/cart.png' %}" width="30px" height="30px"></a>
+                <img src="{% static 'images/menu.png' %}" class="menu-icon" onClick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give your Workout <br>A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="{% static 'images/image1.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------ Featured Categories ------------------------------>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images/category-1.jpg' %}">
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/category-2.jpg' %}">
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images/category-3.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------ Featured Products ------------------------------>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-1.jpg' %}"></a>
+                <h4>Downshifter Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-2.jpg' %}"></a>
+                <h4>Lace-Up Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-3.jpg' %}"></a>
+                <h4>Lace Fastening Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-4.jpg' %}"></a>
+                <h4>Flat Lace-Fastening Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$48.00</p>
+            </div>
+        </div>
+        
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-5.jpg' %}"></a>
+                <h4>Flat Heel Gray Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-6.jpg' %}"></a>
+                <h4>Lace-Fastening Black Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$21.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-7.jpg' %}"></a>
+                <h4>HRX Men's Cotton Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$09.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-8.jpg' %}"></a>
+                <h4>Lace-Up Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-9.jpg' %}"></a>
+                <h4>HRX Cotton Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-10.jpg' %}"></a>
+                <h4>Flat Lace-Fastening Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-11.jpg' %}"></a>
+                <h4>Lace-Up Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="{% static 'images/product-12.jpg' %}"></a>
+                <h4>Running Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$55.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ Testimonials ------------------------------>
+    <div class="testimonial">
+        <div class="small-container">
+            <h2 class="title">Testimonials</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, eveniet!</p>
+                    <h3>John Doe</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, eveniet!</p>
+                    <h3>Jane Doe</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, eveniet!</p>
+                    <h3>Smith Doe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!------------------------------ Offer ------------------------------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="{% static 'images/image1.png' %}" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Redstore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>Product is equipped with 15 sport modes, long battery life, and all-day heart rate tracking.</small><br>
+                    <a href="products.html" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ Footer ------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="{% static 'images/play-store.png' %}">
+                        <img src="{% static 'images/app-store.png' %}">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>About Us</h3>
+                    <p>We are an online e-commerce store with a variety of products available at competitive prices.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 - Redstore</p>
+        </div>
+    </div>
+
+    <script>
+        function menutoggle() {
+            var MenuItems = document.getElementById("MenuItems");
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
